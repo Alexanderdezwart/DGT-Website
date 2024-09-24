@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  {% for weapon in weapons %}
+    <p>
+      <a href="/weapon/{{weapon[0]}}">{{ weapon[1] }}</a>
+    </p>
+    <!--The term {{ weapon[x] }} pulls from the databas-->
+  {% endfor %}
+
+{% endblock %}
